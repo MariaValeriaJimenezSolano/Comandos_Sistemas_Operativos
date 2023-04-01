@@ -31,11 +31,20 @@ Bitácora de comandos para la clase de Sistemas Operativos
 | tail -n 1 (ruta archivo)       | Se utiliza para mostrar las últimas líneas de un archivo de texto | Monitorear nueva información actualizada |  
 | mv               | Mueve carpetas o archivos de una ruta a otra | Cuando se desea cambiar el lugar donde se encuentra un archivo |  
 | cp               | Copia carpetas o archivos | Cuando se desea realizar una copia de algún archivo |  
-| history          | Ver el historial de comandos que se han usado | Si se necesita verificar algún error en un comando pasado |  
+| history          | Ver el historial de comandos que se han usado | Si se necesita verificar algún error en un comando pasado |
+| **Manjaro**      | **Descripción**                                  | **Ejemplo de uso** |
+| sudo pacman -Sy | Actualiza los paquetes disponibles del sistema operativo | Cuando se instala alguna aplicación y se desea actualizar el sistem, para asegurarse de que cargue bien        |  
+| sudo pacman -S unrar zip unzip gzip bzip2 | Se utiliza para instalar los paquetes "unrar", "zip", "unzip", "gzip" y "bzip2" | Cuando se instala y se desea descomprimir o acceder a un archivo con esas terminaciones  |  
+| sudo pacman -S yay | Se utiliza para instalar "yay" | "yay" es un gestor de paquetes AUR (Arch User Repository). AUR es una colección de paquetes creados por la comunidad que no están disponibles en los repositorios oficiales de Arch Linux y Manjaro Linux. Al instalar "yay" en el sistema, se puede buscar, instalar y administrar paquetes de AUR directamente desde la línea de comandos.   |  
+| sudo yay -S --needed base-devel | Se utiliza para instalar los paquetes de desarrollo base en un sistema basado en Arch Linux y sus derivados |  Si se desea instalar un programa que no está disponible en los repositorios oficiales de Manjaro Linux y es necesario compilarlo desde su código fuente, se deben tener instalados los paquetes de desarrollo base para que el proceso de compilación tenga éxito. En ese caso, puedes utilizar el comando "sudo yay -S --needed base-devel" para instalar los paquetes de desarrollo necesarios en el sistema antes de compilar el software |  
+| sudo useradd -m nombredeusuario -G wheel -p passworddelusuario | Sirve para crear un nuevo usuario en un sistema y asignarle una contraseña | Se puede emplear si por ejemplo, se necesita agregar un nuevo usuario con permisos de administrador para realizar tareas de mantenimiento del sistema | 
+| ls -la /carpeta/a* > /ruta_del_archivo/archivo | Lista todos los archivos y directorios de un directorio cuyo nombre comience con la letra "a" y redirige la salida a un archivo en la ruta definida  | ls -la /etc/a* > /home/dir003/dircuatro/archivo2 |
 | **Otros comandos**      | **Descripción**                                  | **Ejemplo de uso** |
 | Tomar instantánea | Guarda las configuraciones del estado de la computadora en ese preciso momento | Backup de las configuraciones del equipo             |  
 | Restaurar el estado actual | Aplica las configuraciones que se guardaron en el comando anterior | Si se realizó un cambio indeseado y es necesario devolver el equipo a su estado previo |  
 | Ctrl + Shift + V | Equivalente a Ctrl + V en Windows | Pegar | 
+
+
 
 
 
